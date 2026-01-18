@@ -1,46 +1,43 @@
-BU PLAIN TEXT ARXITEKTURASI
-TechZone/
-├── index.html
-├── README.md
-├── .gitignore
-├── assets/
-│   ├── css/
-│   │   ├── style.css
-│   │   ├── auth.css
-│   │   ├── responsive.css
-│   │   ├── cart.css
-│   │   └── product-detail.css               
-│   ├── js/
-│   │   ├── database.js
-│   │   ├── auth.js
-│   │   ├── cart.js
-│   │   ├── ui.js
-│   │   └── main.js
-│   └── images/
-│       ├── products/
-│       ├── icons/
-│       └── logo/
-└── pages/
-    ├── auth/
-    │   ├── login.html
-    │   ├── register.html
-    │   ├── security.html
-    │   ├── private.html                              
-    │   └── recover.html
-    ├── shop/
-    │   ├── cart.html
-    │   ├── checkout.html
-    │   ├── product-detail.html                 
-    │   ├── category.html
-    │   ├── compare.html
-    │   └── wishlist.html
-    ├── legal/
-    │   ├── warranty.html
-    │   ├── privacy.html
-    │   ├── terms.html
-    │   └── cookies.html
-    └── support/
-        ├── contact.html
-        ├── about.html
-        ├── faq.html
-        └── shipping.html
+# TechZone React Architecture
+
+A scalable and maintainable architecture for the TechZone e-commerce platform.
+
+## Directory Structure
+
+```text
+techzone-react/
+├── public/                 # Static assets (images, fonts, robots.txt)
+│   └── images/             # Product and UI images
+├── src/
+│   ├── assets/             # Global styles and shared images
+│   ├── components/         # Reusable UI components
+│   │   ├── common/         # Generic components (Button, Input, Modal)
+│   │   ├── layout/         # Layout components (Header, Footer, Sidebar)
+│   │   └── product/        # Product-specific components (ProductCard, Rating)
+│   ├── contexts/           # React Contexts (Cart, Auth, Theme)
+│   ├── hooks/              # Custom React hooks (useCart, useAuth, useLocalStorage)
+│   ├── pages/              # Page components (Home, Products, ProductDetail)
+│   ├── services/           # External API service calls
+│   ├── utils/              # Helper functions (formatCurrency, validation)
+│   ├── App.jsx             # Main App component with routing
+│   ├── main.jsx            # Entry point
+│   └── index.css           # Global styles and Tailwind imports
+├── .env                    # Environment variables
+├── tailwind.config.js      # Tailwind configuration
+└── vite.config.js          # Vite configuration
+```
+
+## Naming Conventions
+- **Components**: PascalCase (e.g., `ProductCard.jsx`)
+- **Hooks**: camelCase starting with `use` (e.g., `useCart.js`)
+- **Utils/Services**: camelCase (e.g., `formatCurrency.js`)
+- **Folders**: kebab-case or camelCase (be consistent)
+
+## Core Technologies
+- **React 19**: Modern UI library
+- **Vite**: Fast build tool
+- **React Router Dom**: Client-side routing
+- **Tailwind CSS**: Utility-first CSS framework
+- **Framer Motion**: Animations
+- **Lucide React**: Icon library
+- **Clsx & Tailwind Merge**: Dynamic class management
