@@ -89,7 +89,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ---
 
 <div align="center">
-  <p>Made with ❤️ by the TechZone Team</p>
+  <p>Made with  by the TechZone Team</p>
 </div>
 
 # 🚀 TechZone: The React Evolution
@@ -194,7 +194,7 @@ TechZone is now faster, more beautiful, and ready for the future.
 
 ---
 <div align="center">
-  <p>Created with ❤️ by Davlat</p>
+  <p>Created with  by Davlat</p>
 </div>
 
 
